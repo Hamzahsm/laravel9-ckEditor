@@ -12,12 +12,19 @@
                 <div class="card-body">
                     <form method="post" action="" enctype="multipart/form-data">
                         @csrf
+                        <div class="mb-3">
+                            <label for="" class="form-label">Title</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        {{-- this code below is to display ckeditor --}}
                         <div class="form-group">
+                            <label for="" class="form-label">Deskripsi</label>
                             <textarea class="ckeditor form-control" name="wysiwyg-editor"></textarea>
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
 </body>
